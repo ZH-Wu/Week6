@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <link rel="stylesheet" href="/assets/images/icofont/icofont.min.css">
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>    
 
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="/assets/images/icofont/icofont.min.css">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main class="pt-xl border-bottom border-primary border-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h5 class="text-center d-flex flex-column noto-serif fw-bold mb-2"><i
+              class="icofont-star-alt-1 fs-4 mb-2"></i>會員登入</h5>
+          <div class="col-md-4">
+            <form class="form-control d-flex flex-column">
+              <label for="account" class="noto-sans text-black mb-1">帳號</label>
+              <input type="email" name="account" id="account" class="mb-2 noto-sans text-light fs-6 py-1 px-2"
+                placeholder="請輸入帳號">
+              <label for="password" class="noto-sans text-black mb-1">密碼</label>
+              <input type="password" name="password" id="password" class="mb-4 noto-sans text-light fs-6 py-1 px-2"
+                placeholder="請輸入密碼">
+              <button type="submit" class="btn btn-primary noto-sans fs-6 fw-bold py-1 login-btn d-flex justify-content-center">登入<img src="/assets/images/rounded-double-right 1.png" alt="double-arrow" class="ms-xs align-self-center"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

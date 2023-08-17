@@ -304,7 +304,8 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        #c96464; // custom // $red !default;
-$light:         $gray-100 !default;
+// $light:         $gray-100 !default;
+$light:         #878787 !default; // custom
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -318,6 +319,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "black":      $black  // custom
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -374,12 +376,14 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
+  xs: $spacer * 0.25, // 4px
   1: $spacer * 0.5, // 8px
   2: $spacer * 1, // 16px
   3: $spacer * 1.5, // 24px
   4: $spacer * 2, // 32px
   5: $spacer * 2.5, // 40px
-  6: $spacer * 3 // 48px
+  6: $spacer * 3, // 48px
+  xl: $spacer * 3.75
 ) !default;
 // scss-docs-end spacer-variables-maps
 

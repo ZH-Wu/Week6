@@ -25,7 +25,11 @@ img {
     height: auto;
 }
 
-*, *::before, *::after {
-    outline: 1px dashed red;
+input {
+    width: 100%;
 }
+
+// *, *::before, *::after {
+//     outline: 1px dashed red;
+// }
 
