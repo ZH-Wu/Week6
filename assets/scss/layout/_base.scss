@@ -1,0 +1,27 @@
+// Yeseva One
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+// Noto Serif TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+// Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+.noto-serif {
+    font-family: 'Noto Serif TC', serif;
+}
+
+.noto-sans {
+    font-family: 'Noto Sans TC', serif;
+}
+
+a {
+    display: block;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
