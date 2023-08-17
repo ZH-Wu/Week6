@@ -25,3 +25,7 @@ img {
     height: auto;
 }
 
+*, *::before, *::after {
+    outline: 1px solid red;
+}
+
