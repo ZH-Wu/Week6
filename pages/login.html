@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/assets/images/icofont/icofont.min.css">
+
+</head>
+
+<body class="d-flex flex-column vh-100">
+  <%- include('./layout/header'); -%>
+
+    <main class="border-bottom border-primary border-3 flex-grow-1 pt-md-xl pt-5" style="padding-bottom: 175px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-4">
+            <h5 class="text-center d-flex flex-column noto-serif fw-bold fs-3"><i class="icofont-star-alt-1 fs-2 mb-3"></i>會員登入</h5>
+            <form class="form-control d-flex flex-column border-0">
+              <label for="account" class="noto-sans text-black mb-1">帳號</label>
+              <input type="email" name="account" id="account" class="noto-sans text-light fs-4 px-3 py-1 mb-md-5 mb-3" placeholder="請輸入帳號">
+              <label for="password" class="noto-sans text-black mb-1">密碼</label>
+              <input type="password" name="password" id="password" class="noto-sans text-light fs-4 px-3 py-1 mb-md-6 mb-5" placeholder="請輸入密碼">
+              <button type="submit"
+                class="btn btn-primary noto-sans fw-bold d-flex justify-content-center text-white link-secondary py-md-1 py-3">登入
+                <img src="/assets/images/rounded-double-right 1.png" alt="double-arrow" class="align-self-center">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

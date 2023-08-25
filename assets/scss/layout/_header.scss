@@ -4,6 +4,8 @@
 }
 
 .icofont-search-1 {
-    font-size: 19px;
+    &:hover {
+        color: $secondary;
+    }
 }
 

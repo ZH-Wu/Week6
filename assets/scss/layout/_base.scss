@@ -15,6 +15,10 @@
     font-family: 'Noto Sans TC', serif;
 }
 
+// *, *::before, *::after {
+//     outline: 1px dashed red;
+// }
+
 a {
     display: block;
 }
@@ -25,11 +29,10 @@ img {
     height: auto;
 }
 
-input {
-    width: 100%;
+ol, ul {
+    margin-bottom: 0;
 }
 
-// *, *::before, *::after {
-//     outline: 1px dashed red;
-// }
+
+
 
