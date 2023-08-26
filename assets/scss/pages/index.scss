@@ -1,0 +1,13 @@
+.banner {
+    background-image: url(/assets/images/event.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        height: 518px;
+    }
+}
