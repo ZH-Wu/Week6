@@ -383,6 +383,7 @@ $spacers: (
   4: $spacer * 1.25, // 20px
   5: $spacer * 1.5, // 24px
   6: $spacer * 2, // 32px
+  7: $spacer * 2.5, // 40px
   lg: $spacer * 3, // 48px
   xl: $spacer * 3.75 // 60px
 
@@ -587,6 +588,7 @@ $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
 $h5-font-size:                $font-size-base * 1.125 !default;
 $h6-font-size:                $font-size-base;
+$sm-font-size:                $font-size-base * 0.875 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -598,7 +600,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  sm: $sm-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1254,7 +1257,7 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
+$card-border-color:                 none; // var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                $border-radius !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
@@ -1264,7 +1267,7 @@ $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+$card-bg:                           none; // $white !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
@@ -1395,9 +1398,9 @@ $toast-header-border-color:         rgba($black, .05) !default;
 // scss-docs-start badge-variables
 $badge-font-size:                   .75em !default;
 $badge-font-weight:                 $font-weight-bold !default;
-$badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
+$badge-color:                       $black; //$white !default;
+$badge-padding-y:                   $spacer * .25; //.35em !default;
+$badge-padding-x:                   $spacer * 1.5; // .65em !default;
 $badge-border-radius:               $border-radius !default;
 // scss-docs-end badge-variables
 
