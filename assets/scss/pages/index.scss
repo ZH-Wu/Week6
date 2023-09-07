@@ -66,3 +66,21 @@
     white-space: nowrap;
     overflow-x: hidden;
 }
+
+.tag {
+    top: -25px;
+    left: 35%;
+    transform: rotate(-4deg);
+}
+
+.card-2 {
+    transform: rotate(2deg);
+}
+
+.card-3 {
+    transform: rotate(-2deg);
+}
+
+.card-4 {
+    transform: rotate(2deg);
+}
